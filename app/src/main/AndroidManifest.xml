@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pillreminder.pillreminder">
+
+    <!-- VERY IMPORTANT! Don't forget this permission, or in-app billing won't work. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        tools:remove="android:maxSdkVersion" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/medicineboxicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LaunchScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pill_add"
+            android:label="เพิ่มบันทึกการใช้ยา" />
+        <activity
+            android:name=".Profile"
+            android:label="โปรไฟล์" />
+        <activity
+            android:name=".Add_pill_Edite"
+            android:label="เพิ่มบันทึกการพบแพทย์" />
+        <activity
+            android:name=".Doctor_content"
+            android:label="@string/title_activity_add_pill"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Alert -->
+        <service android:name=".AlertPill" />
+        <activity
+            android:name=".AlertPillActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AlertRestart"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

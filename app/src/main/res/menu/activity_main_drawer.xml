@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nenu1"
+            android:icon="@drawable/username_icon"
+            android:title="โปรไฟล์" />
+        <item
+            android:id="@+id/nenu2"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="บันทึกการพบแพทย์" />
+        <item
+            android:id="@+id/nenu3"
+            android:icon="@drawable/ic_menu_sort_by_size"
+
+            android:title="บันทึกการใช้ยา" />
+
+        <item
+            android:id="@+id/nenu4"
+            android:icon="@drawable/ic_menu_sort_by_size"
+            android:title="สถิติการใช้ยา" />
+    </group>
+
+</menu>

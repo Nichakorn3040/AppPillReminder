@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_eaten">
+        <item>ก่อน</item>
+        <item>หลัง</item>
+    </string-array>
+    <string-array name="array_eaten_time">
+        <item>เช้า</item>
+        <item>เที่ยง</item>
+        <item>เย็น</item>
+        <item>ก่อนนอน</item>
+    </string-array>
+</resources>
